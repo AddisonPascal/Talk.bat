@@ -1,3 +1,5 @@
+:: Made by Addison Djatschenko
+
 @echo off
 mode 1000
 title Talk.bat

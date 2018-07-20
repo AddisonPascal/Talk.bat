@@ -1,3 +1,5 @@
+:: Made by Addison Djatschenko
+
 @echo off
 title Talk.bat
 echo Your Name: 
