@@ -3,7 +3,7 @@ mode 1000
 title Talk.bat
 echo Your Name: 
 set /p userName= "-->"
-title Talk.bat - Type "exit" to exit.
+title Talk.bat - Type "exit" to exit - Leave blank to update
 cls
 if not exist "%~dp0/messages.txt" (
 goto createLogfile
@@ -32,7 +32,9 @@ echo %userName%, on %computername%, on %time%, %date% joined messages.txt.
 cls
 type "%~dp0/messages.txt"
 echo. 
+set tlk=update
 set /p tlk= "%userName%: "
+if "%tlk%"=="update" goto talk
 if "%tlk%"=="exit" goto exit
 goto saveConversation
 
