@@ -3,7 +3,7 @@ mode 1000
 title Talk.bat
 echo Your Name: 
 set /p userName= "-->"
-title Talk.bat - Type "exit" to exit - Leave blank to update
+title Talk.bat - Type "exit" to exit - Leave blank or type "update" to update.
 cls
 if not exist "%~dp0/messages.txt" (
 goto createLogfile
