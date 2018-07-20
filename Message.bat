@@ -29,7 +29,9 @@ echo %userName%, on %computername%, on %time%, %date% joined messages.txt.
 
 :talk
 cls
+set tlk=""
 set /p tlk= "%userName%: "
+if "%tlk%"=="""" goto talk
 if "%tlk%"=="exit" goto exit
 goto saveConversation
 
