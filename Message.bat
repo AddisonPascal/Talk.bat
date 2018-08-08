@@ -48,6 +48,18 @@ echo "%tlk%"
 )>messages2.txt
 del "%~dp0/messages.txt"
 ren "%~dp0/messages2.txt" "messages.txt"
+if not exist "%~dp0message.txt" goto talk
+(
+@echo off
+type "%~dp0/messages.txt"
+echo. 
+echo. 
+type "%~dp0/message.txt"
+echo. 
+)>messages2.txt
+del "%~dp0/messages.txt"
+ren "%~dp0/messages2.txt" "messages.txt"
+del "%~dp0message.txt"
 goto talk
 
 :exit

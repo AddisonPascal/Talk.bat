@@ -1,3 +1,5 @@
+onedrive.lnk
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -48,3 +50,4 @@ Temporary Items
 
 # Files created by the program
 messages.txt
+message.txt
