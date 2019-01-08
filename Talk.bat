@@ -1,6 +1,7 @@
 :: Made by Addison Djatschenko
 
 @echo off
+pushd %~dp0
 mode 1000
 title Talk.bat
 echo Your Name: 
@@ -88,6 +89,7 @@ echo %userName%, on %computername%, on %time%, %date% left messages.txt.
 )>messages2.txt
 del "%~dp0/messages.txt"
 ren "%~dp0/messages2.txt" "messages.txt"
+popd
 
 
 ::This allows 2 people on the same network to communicate. 

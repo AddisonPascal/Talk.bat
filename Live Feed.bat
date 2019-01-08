@@ -1,6 +1,7 @@
 :: Made by Addison Djatschenko
 
 @echo off
+pushd %~dp0
 title Current Feed
 cls
 goto talk
